@@ -1,7 +1,8 @@
 package priorityQueue;
 import java.util.Comparator;
 
-import priorityQueueInterfaces.*; 
+import priorityQueueInterfaces.DisplayablePriorityQueue;
+import priorityQueueInterfaces.Entry; 
 
 /**
  * 
@@ -135,6 +136,7 @@ public abstract class AbstractPriorityQueue<K,V>
 	 */
 	private static class DefaultComparator<E> implements Comparator<E> {
 
+		@SuppressWarnings("unchecked")
 		@Override
 		public int compare(E o1, E o2) throws ClassCastException {
 			return ((Comparable<E>) o1).compareTo(o2);

@@ -1,12 +1,8 @@
 package heap;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 
 import positionalStructures.Position;
-import treeClasses.AbstractBinaryTree;
-import treeClasses.LinkedBinaryTree;
 
 /**
  * Heap data structure implemented as a subclass of AbstractBinaryTree

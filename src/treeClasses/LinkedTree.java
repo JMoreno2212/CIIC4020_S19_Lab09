@@ -1,7 +1,6 @@
 package treeClasses;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import positionalStructures.Position;
 
@@ -182,12 +181,14 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 			this.ownerTree = ownerTree;   
 		}
 		
+		@SuppressWarnings("unused")
 		public Node(E element) { 
 			this.element = element; 
 			this.parent = this; 
 			this.children = null; 
 		}
 		
+		@SuppressWarnings("unused")
 		public void clear() { 
 			this.element = null; 
 			this.parent = this; 
@@ -215,6 +216,7 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 			return element;
 		} 
 		
+		@SuppressWarnings("unused")
 		public void setElement(E e) { 
 			element = e; 
 		}		
@@ -223,6 +225,7 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 			return ownerTree; 
 		}
 		
+		@SuppressWarnings("unused")
 		public void setOwnerTree(LinkedTree<E> t) { 
 			ownerTree = t; 
 		}

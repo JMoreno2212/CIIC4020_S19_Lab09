@@ -1,10 +1,8 @@
 package priorityQueue;
 
-import heap.CompleteBinaryTree;
-
-import java.util.ArrayList;
 import java.util.Comparator;
 
+import heap.CompleteBinaryTree;
 import priorityQueueInterfaces.Entry;
 
 /**

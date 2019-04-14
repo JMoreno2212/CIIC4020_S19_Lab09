@@ -1,8 +1,5 @@
 package testerClasses;
 
-import priorityQueue.HeapListPriorityQueue;
-import priorityQueue.HeapPriorityQueue;
-import priorityQueue.SortedListPriorityQueue;
 import priorityQueue.UnsortedListPriorityQueue;
 import priorityQueueInterfaces.PriorityQueue;
 
@@ -14,8 +11,8 @@ public class PriorityQueueTester2 {
 		
 		PriorityQueue<Integer, Integer> pq; 
 		
-		pq = new UnsortedListPriorityQueue<Integer, Integer>(new IntegerComparator1());    // 1
-		//pq = new SortedListPriorityQueue<Integer, Integer>(new IntegerComparator1());    // 2
+		pq = new UnsortedListPriorityQueue<Integer, Integer>(new IntegerComparator2());    // 1
+		//pq = new SortedListPriorityQueue<Integer, Integer>(new IntegerComparator2());    // 2
 		//pq = new HeapListPriorityQueue<Integer, Integer>(new IntegerComparator1());      // 3
 		//pq = new HeapPriorityQueue<Integer, Integer>(new IntegerComparator1());          // 4
 

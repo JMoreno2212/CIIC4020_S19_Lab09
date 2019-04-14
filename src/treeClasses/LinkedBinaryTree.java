@@ -1,8 +1,5 @@
 package treeClasses;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import positionalStructures.Position;
 
 public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
@@ -149,6 +146,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 	private static class Node<E> implements Position<E> { 
 		private E element; 
 		private Node<E> parent, left, right; 
+		@SuppressWarnings("unused")
 		public Node() {}
 		public Node(E element, Node<E> parent, Node<E> left, Node<E> right) { 
 			this.element = element; 
@@ -177,6 +175,7 @@ public class LinkedBinaryTree<E> extends AbstractBinaryTree<E> {
 		public void setRight(Node<E> right) {
 			this.right = right;
 		}
+		@SuppressWarnings("unused")
 		public void setElement(E element) {
 			this.element = element;
 		}
